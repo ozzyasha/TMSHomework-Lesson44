@@ -1,2 +1,12 @@
-# TMSHomework-Lesson44
-TeachMeSkills Homework - Lesson 44
+## TeachMeSkills Homework - Lesson 44
+
+### Домашнее задание:
+
+Сделать List и Grid объектов на SwiftUI.  
+Подключить свой статический API, сделать кэширование объектов в БД.  
+
+Задания со *:
+
+**Кэширование картинок*  
+**Сделать свои View для объектов*  
+****Реализовать динамическую API*  
