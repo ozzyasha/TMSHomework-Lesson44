@@ -19,6 +19,8 @@
 		7ADA0B862C012A4A00CB309D /* TeaViewImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA0B852C012A4A00CB309D /* TeaViewImageView.swift */; };
 		7ADA0B882C013C2F00CB309D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA0B872C013C2F00CB309D /* ListView.swift */; };
 		7ADA0B8A2C01546600CB309D /* CircleBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA0B892C01546600CB309D /* CircleBackgroundView.swift */; };
+		7ADA0B8C2C01C60F00CB309D /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA0B8B2C01C60F00CB309D /* GridView.swift */; };
+		7ADA0B8E2C01C81200CB309D /* TeaViewGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA0B8D2C01C81200CB309D /* TeaViewGridCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		7ADA0B852C012A4A00CB309D /* TeaViewImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaViewImageView.swift; sourceTree = "<group>"; };
 		7ADA0B872C013C2F00CB309D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		7ADA0B892C01546600CB309D /* CircleBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBackgroundView.swift; sourceTree = "<group>"; };
+		7ADA0B8B2C01C60F00CB309D /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		7ADA0B8D2C01C81200CB309D /* TeaViewGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaViewGridCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 			children = (
 				7A68DB0E2BFE195200D1BC5E /* ContentView.swift */,
 				7ADA0B872C013C2F00CB309D /* ListView.swift */,
+				7ADA0B8B2C01C60F00CB309D /* GridView.swift */,
 				7ADA0B892C01546600CB309D /* CircleBackgroundView.swift */,
 				7ADA0B842C012A3000CB309D /* Cells */,
 			);
@@ -126,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				7ADA0B822C0128D400CB309D /* TeaViewListCell.swift */,
+				7ADA0B8D2C01C81200CB309D /* TeaViewGridCell.swift */,
 				7ADA0B852C012A4A00CB309D /* TeaViewImageView.swift */,
 			);
 			path = Cells;
@@ -204,6 +210,8 @@
 				7ADA0B8A2C01546600CB309D /* CircleBackgroundView.swift in Sources */,
 				7ADA0B7B2BFF422400CB309D /* TeaCatalogueModel.swift in Sources */,
 				7ADA0B832C0128D400CB309D /* TeaViewListCell.swift in Sources */,
+				7ADA0B8E2C01C81200CB309D /* TeaViewGridCell.swift in Sources */,
+				7ADA0B8C2C01C60F00CB309D /* GridView.swift in Sources */,
 				7A68DB0F2BFE195200D1BC5E /* ContentView.swift in Sources */,
 				7ADA0B772BFF3E6500CB309D /* APIService.swift in Sources */,
 				7ADA0B862C012A4A00CB309D /* TeaViewImageView.swift in Sources */,
