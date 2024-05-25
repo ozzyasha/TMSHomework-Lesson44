@@ -33,6 +33,7 @@ struct TeaViewGridCell: View {
                 Spacer()
                 Button(action: {
                     isLiked.toggle()
+                    @AppStorage("isLiked") var liked: Bool = isLiked
                 }) {
                     Image(systemName: isLiked ? "heart.fill" : "heart")
                         .foregroundColor(.red)
@@ -48,5 +49,5 @@ struct TeaViewGridCell: View {
 }
 
 #Preview {
-    TeaViewGridCell(tea: TeaCatalogueModel(name: "Some tea tea tea tea tea tea tea tea tea tea teaaaaaaaaa teateatea aaaaa", price: "0 Br", img: "https://tea-mail.by/wa-data/public/shop/products/82/83/8382/images/32944/32944.750.jpg", description: "description", quantity: "1 шт."))
+    TeaViewGridCell(tea: TeaCatalogueModel(id: 0, name: "Some tea tea tea tea tea tea tea tea tea tea teaaaaaaaaa teateatea aaaaa", price: "0 Br", img: "https://tea-mail.by/wa-data/public/shop/products/82/83/8382/images/32944/32944.750.jpg", description: "description", quantity: "1 шт."))
 }

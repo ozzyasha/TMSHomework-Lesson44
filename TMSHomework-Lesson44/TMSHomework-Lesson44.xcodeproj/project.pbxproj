@@ -21,6 +21,9 @@
 		7ADA0B8A2C01546600CB309D /* CircleBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA0B892C01546600CB309D /* CircleBackgroundView.swift */; };
 		7ADA0B8C2C01C60F00CB309D /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA0B8B2C01C60F00CB309D /* GridView.swift */; };
 		7ADA0B8E2C01C81200CB309D /* TeaViewGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA0B8D2C01C81200CB309D /* TeaViewGridCell.swift */; };
+		7ADA0B932C01E1C100CB309D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7ADA0B922C01E1C100CB309D /* RealmSwift */; };
+		7ADA0B952C01E22100CB309D /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA0B942C01E22100CB309D /* RealmService.swift */; };
+		7ADA0B972C01E3B000CB309D /* TeaCatalogueRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADA0B962C01E3B000CB309D /* TeaCatalogueRealmModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,8 @@
 		7ADA0B892C01546600CB309D /* CircleBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBackgroundView.swift; sourceTree = "<group>"; };
 		7ADA0B8B2C01C60F00CB309D /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		7ADA0B8D2C01C81200CB309D /* TeaViewGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaViewGridCell.swift; sourceTree = "<group>"; };
+		7ADA0B942C01E22100CB309D /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		7ADA0B962C01E3B000CB309D /* TeaCatalogueRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaCatalogueRealmModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADA0B932C01E1C100CB309D /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				7ADA0B7A2BFF422400CB309D /* TeaCatalogueModel.swift */,
+				7ADA0B962C01E3B000CB309D /* TeaCatalogueRealmModel.swift */,
 				7ADA0B7D2BFFB24900CB309D /* APIError.swift */,
 			);
 			path = Models;
@@ -115,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				7ADA0B762BFF3E6500CB309D /* APIService.swift */,
+				7ADA0B942C01E22100CB309D /* RealmService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -153,6 +161,9 @@
 			dependencies = (
 			);
 			name = "TMSHomework-Lesson44";
+			packageProductDependencies = (
+				7ADA0B922C01E1C100CB309D /* RealmSwift */,
+			);
 			productName = "TMSHomework-Lesson44";
 			productReference = 7A68DB092BFE195200D1BC5E /* TMSHomework-Lesson44.app */;
 			productType = "com.apple.product-type.application";
@@ -181,6 +192,9 @@
 				Base,
 			);
 			mainGroup = 7A68DB002BFE195200D1BC5E;
+			packageReferences = (
+				7ADA0B8F2C01E1C100CB309D /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 7A68DB0A2BFE195200D1BC5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,8 +230,10 @@
 				7ADA0B772BFF3E6500CB309D /* APIService.swift in Sources */,
 				7ADA0B862C012A4A00CB309D /* TeaViewImageView.swift in Sources */,
 				7ADA0B882C013C2F00CB309D /* ListView.swift in Sources */,
+				7ADA0B952C01E22100CB309D /* RealmService.swift in Sources */,
 				7ADA0B812C00AF1C00CB309D /* TeaViewModel.swift in Sources */,
 				7A68DB0D2BFE195200D1BC5E /* TMSHomework_Lesson44App.swift in Sources */,
+				7ADA0B972C01E3B000CB309D /* TeaCatalogueRealmModel.swift in Sources */,
 				7ADA0B7E2BFFB24900CB309D /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +440,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7ADA0B8F2C01E1C100CB309D /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7ADA0B922C01E1C100CB309D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7ADA0B8F2C01E1C100CB309D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7A68DB012BFE195200D1BC5E /* Project object */;
 }

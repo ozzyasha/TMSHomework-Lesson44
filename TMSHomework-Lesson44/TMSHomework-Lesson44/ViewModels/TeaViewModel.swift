@@ -6,20 +6,33 @@
 //
 
 import Foundation
+import SwiftUI
 
 class TeaViewModel: ObservableObject {
     
     @Published
-    var teaCatalogue = [TeaCatalogueModel]()
+    var teaCatalogueModel = [TeaCatalogueModel]()
     
     init() {
-        APIService.shared.fetchData(completionHandler: { [weak self] teaCatalogue in
-            DispatchQueue.main.async {
-                self?.teaCatalogue = teaCatalogue
-            }
-        }, errorHandler: { error in
-            print(error) //  алерт
-        })
+        teaCatalogueModel = RealmService.shared.readAllTeaCatalogueFromDatabase()
+        
+        guard !teaCatalogueModel.isEmpty else {
+            APIService.shared.fetchData(completionHandler: { teaCatalogue in
+                DispatchQueue.main.async {
+                    for tea in teaCatalogue {
+                        RealmService.shared.saveOrUpdateTea(teaModel: tea)
+                        self.teaCatalogueModel.append(tea)
+                    }
+                }
+                
+            }, errorHandler: { error in
+                print(error) //  алерт
+            })
+            return
+        }
+        
+        
+        
     }
     
     

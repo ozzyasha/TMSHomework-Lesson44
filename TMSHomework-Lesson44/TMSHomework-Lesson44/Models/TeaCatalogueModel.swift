@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct TeaCatalogueModel: Codable/*, Identifiable*/ {
-//    let id = UUID()
+struct TeaCatalogueModel: Codable, Identifiable {
+    var id: Int
     let name: String
     let price: String
     let img: String
@@ -16,9 +16,10 @@ struct TeaCatalogueModel: Codable/*, Identifiable*/ {
     let quantity: String
     
     enum TeaCatalogue: String, CodingKey {
-        case name = "name"
+        case id
+        case name
         case price
-        case img = "img"
+        case img
         case description
         case quantity
     }

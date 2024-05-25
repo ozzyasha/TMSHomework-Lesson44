@@ -13,7 +13,7 @@ struct ListView: View {
     var vm: TeaViewModel
     
     var body: some View {
-        List(vm.teaCatalogue, id: \.name) { tea in
+        List(vm.teaCatalogueModel, id: \.id) { tea in
                 TeaViewListCell(tea: tea)
                 .listRowBackground(Color.clear)
                 .listRowSeparator(.hidden)

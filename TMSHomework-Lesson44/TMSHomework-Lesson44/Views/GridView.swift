@@ -19,21 +19,18 @@ struct GridView: View {
     
     var body: some View {
         ScrollView {
-            HStack {
-                LazyVGrid(columns: columns,
-                          alignment: .center,
-                          spacing: 16,
-                          pinnedViews: [.sectionHeaders, .sectionFooters]
-                ) {
-                    
-                    ForEach(vm.teaCatalogue, id: \.name) { tea in
-                        
-                        TeaViewGridCell(tea: tea)
-                    }
+            LazyVGrid(columns: columns,
+                      alignment: .center,
+                      spacing: 16,
+                      pinnedViews: [.sectionHeaders, .sectionFooters]
+            ) {
+                
+                ForEach(vm.teaCatalogueModel, id: \.id) { tea in
+                    TeaViewGridCell(tea: tea)
                 }
             }
+            .padding()
         }
-        .padding()
         .listStyle(.plain)
         .background(CircleBackgroundView())
         .buttonStyle(.borderless)

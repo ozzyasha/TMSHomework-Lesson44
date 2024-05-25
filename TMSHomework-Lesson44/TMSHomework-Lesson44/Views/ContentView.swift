@@ -25,12 +25,13 @@ struct ContentView: View {
                                 isGrid.toggle()
                             },
                             label: {
-                                Image(systemName: "rectangle.grid.1x2"
-                                )
+                                Image(systemName: "rectangle.grid.1x2")
                                 .font(.system(size: 25))
-                                .foregroundStyle(Color.yellow)}
+                                .foregroundStyle(Color.yellow)
+                            }
                         )
                     }
+                    .toolbarBackground(.red, for: .navigationBar)
             } else {
                 ListView(vm: vm)
                     .toolbar {
@@ -39,12 +40,13 @@ struct ContentView: View {
                                 isGrid.toggle()
                             },
                             label: {
-                                Image(systemName: "rectangle.grid.2x2"
-                                )
+                                Image(systemName: "rectangle.grid.2x2")
                                 .font(.system(size: 25))
-                                .foregroundStyle(Color.yellow)}
+                                .foregroundStyle(Color.yellow)
+                            }
                         )
                     }
+                    .toolbarBackground(.red, for: .navigationBar)
             }
         }
         

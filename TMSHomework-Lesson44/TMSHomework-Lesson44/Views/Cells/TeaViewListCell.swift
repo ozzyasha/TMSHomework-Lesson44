@@ -51,7 +51,7 @@ struct TeaViewListCell: View {
 }
 
 #Preview {
-    TeaViewListCell(tea: TeaCatalogueModel(name: "Some tea tea tea tea tea tea tea tea tea tea teaaaaaaaaa teateatea aaaaa", price: "0 Br", img: "https://tea-mail.by/wa-data/public/shop/products/82/83/8382/images/32944/32944.750.jpg", description: "description", quantity: "1 шт."))
+    TeaViewListCell(tea: TeaCatalogueModel(id: 0, name: "Some tea tea tea tea tea tea tea tea tea tea teaaaaaaaaa teateatea aaaaa", price: "0 Br", img: "https://tea-mail.by/wa-data/public/shop/products/82/83/8382/images/32944/32944.750.jpg", description: "description", quantity: "1 шт."))
 }
 
 
